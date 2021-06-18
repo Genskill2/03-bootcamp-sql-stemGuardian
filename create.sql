@@ -5,7 +5,7 @@ CREATE TABLE publisher(
        );
 CREATE TABLE books(
        id INTEGER PRIMARY KEY,
-       title text NOT NULL
+       title text NOT NULL,
        publisher INTEGER references publisher(id)
        );
 CREATE TABLE subjects(
